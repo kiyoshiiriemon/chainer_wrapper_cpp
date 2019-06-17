@@ -5,7 +5,7 @@ Preparation (for Ubuntu16.04, Python2.7)
 - pip install pillow chainer cupy --user
 - git clone https://github.com/ndarray/Boost.NumPy.git
     - cd Boost.NumPy
-    - cmake .
+    - cmake ..
     - make && sudo make install
     - echo /usr/local/lib | sudo tee /etc/ld.so.conf.d/usr-local-lib.conf
     - echo /usr/local/lib64 | sudo tee /etc/ld.so.conf.d/usr-local-lib64.conf
