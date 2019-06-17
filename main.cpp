@@ -7,13 +7,17 @@
 #include <fstream>
 #include <streambuf>
 #include <boost/python.hpp>
-#include <boost/numpy.hpp>
 #include <list>
 #include <chrono>
 #include <opencv2/opencv.hpp>
 
-
+#if BOOST_VERSION >= 106300
+#include <boost/python/numpy.hpp>
+namespace np = boost::python::numpy;
+#else
+#include <boost/numpy.hpp>
 namespace np = boost::numpy;
+#endif
 
 static const int IMH = 240;
 static const int IMW = 320;
