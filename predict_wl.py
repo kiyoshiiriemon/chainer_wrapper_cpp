@@ -16,6 +16,7 @@ from chainer.training import extensions
 from chainer import serializers
 
 chainer.config.train = False
+chainer.config.enable_backprop = False
 use_gpu = True
 
 class MLP(chainer.Chain):
